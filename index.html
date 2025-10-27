@@ -77,10 +77,13 @@
       <p>Completa tus datos y elige tu tipo de pedicura para reservar tu turno al instante vía WhatsApp.</p>
     </div>
     <form id="reservationForm" class="reservation-form">
+      <p class="placeholder-text">Indique su nombre</p>
       <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+      <p class="placeholder-text">Indique su email</p>
       <input type="email" id="email" name="email" placeholder="Email" required>
-      <input type="date" id="date" name="date" required>
-      
+      <p class="placeholder-text">Seleccione la fecha</p>
+      <input style="min-width: 100%;" type="date" id="date" name="date" required>
+      <p class="placeholder-text">Seleccione tipo de pedicura</p>
       <select id="pedicureType" name="pedicureType" required>
         <option value="" disabled selected>Tipo de pedicura</option>
         <option value="Clásica">Clásica</option>
@@ -88,14 +91,13 @@
         <option value="Gel">Gel</option>
         <option value="Decorativa">Decorativa</option>
       </select>
-
+<p class="placeholder-text">Seleccione un metodo de pago</p>
       <!-- Tipo de pago -->
       <select id="paymentType" name="paymentType" required>
         <option value="" disabled selected>Abona</option>
         <option value="Efectivo">Efectivo</option>
         <option value="Transferencia">Transferencia</option>
       </select>
-
       <!-- Método de transferencia -->
       <select id="transferMethod" name="transferMethod" style="display:none;">
         <option value="" disabled selected>Método de transferencia</option>

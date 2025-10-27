@@ -595,6 +595,13 @@ nav a.active {
   transform: translateY(-2px);
 }
 
+.placeholder-text {
+  font-size: 14px;
+  padding-left: 10px;
+  color: #dcd2eb;
+  margin-bottom: 4px;
+}
+
 /* === Responsive Mejorado === */
 @media (max-width: 1200px) {
   /* Hero y uñas */
@@ -604,14 +611,22 @@ nav a.active {
     padding: 40px 30px;
   }
 
+  .hero-text{
+    width: 100%;
+  }
+
+  .nails-hero h2::after {
+    display: none;
+}
+
   .hero-text, .nails-hero .hero-text {
     max-width: 100%;
     margin-bottom: 20px;
   }
 
   .nails-list {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
   .nails-hero .hero-img img {
